@@ -41,7 +41,7 @@ extern "C" {
 #[cfg(not(feature = "std"))]
 /// Mutable static variables should be always observed to have
 /// the initialized value at the start of a runtime call.
-static mut MUTABLE_STATIC: u64 = 3200;
+static mut MUTABLE_STATIC: u64 = 32;
 
 #[cfg(not(feature = "std"))]
 /// This is similar to `MUTABLE_STATIC`. The tests need `MUTABLE_STATIC` for testing that

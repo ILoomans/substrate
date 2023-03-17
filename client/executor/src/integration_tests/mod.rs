@@ -525,7 +525,7 @@ fn restoration_of_globals(wasm_method: WasmExecutionMethod) {
 	//
 	// The fixture performs 2 allocations of 768KB and this theoretically gives 1536KB, however, due
 	// to our allocator algorithm there are inefficiencies.
-	const REQUIRED_MEMORY_PAGES: u64 = 3200;
+	const REQUIRED_MEMORY_PAGES: u64 = 32;
 
 	let runtime = mk_test_runtime(wasm_method, REQUIRED_MEMORY_PAGES);
 	let mut instance = runtime.new_instance().unwrap();
